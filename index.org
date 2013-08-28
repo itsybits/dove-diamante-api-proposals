@@ -37,23 +37,25 @@ Filter =date=, =name=, =hair_style=, =hair_length=, =time=
 - Photos
 - Followers
 - Following
+- Facebook ID
 - Profile
     - Email
     - Address
     - Tel
     - Hair length
-**** Update Profile
+**** Update Info
 **** Follow
 
-*** Invite / Find
-**** Facebook Email
-[FacebookID]@facebook.com
-**** Contacts
-**** Unlimited Community
+*** Find / Invite
+**** Check whether an user exist
+By =email= or =facebook_id=
+**** Invite
+By =email= or =facebook_id=
+**** Get global user list
 
 *** Gift
-**** Fetch Gifts' Info
-**** Claim Gift
+**** Get gift list
+**** Claim gift
 
 *** Others
 **** Tips
@@ -61,7 +63,7 @@ Filter =date=, =name=, =hair_style=, =hair_length=, =time=
 
 ** PHOTO METADATA
 #+begin_quote
-Should leverage Image metadata format (XMP, ITCP, ...) <br/>
+Should leverage image metadata format (XMP, ITCP, ...) <br/>
 Or just use plain API instead?
 #+end_quote
 *** Metadata included
