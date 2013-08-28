@@ -42,11 +42,22 @@ Is Invite/Find supposed to be for unregistered users?
 If so, how should it possible look for this unlimited community?
 #+end_quote
 
+*** Gift
+**** Fetch Gifts' Info
+**** Claim Gift
+
+*** Others
+**** Tips / Product Info
+#+begin_quote
+Is API needed? Is tips' content static?
+#+end_quote
+
 ** PHOTO METADATA
 #+begin_quote
 Should leverage Image metadata format (XMP, ITCP, ...) <br/>
-Or should use plain API instead?
+Or just use plain API instead?
 #+end_quote
 *** Metadata included
 **** Category
 **** Occasion
+**** Attached events
