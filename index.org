@@ -45,14 +45,9 @@ Filter =date=, =name=, =hair_style=, =hair_length=, =time=
 **** Update Profile
 **** Follow
 
-*** Find
-
-*** Inviting
-**** Facebook
-#+begin_quote
-Invite through Facebook email or by a Facebook App? <br/>
-Currently there is no API provided to get a friends' email from a Facebook user
-#+end_quote
+*** Invite / Find
+**** Facebook Email
+[FacebookID]@facebook.com
 **** Contacts
 **** Unlimited Community
 
