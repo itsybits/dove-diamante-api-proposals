@@ -26,7 +26,6 @@ Filter =date=, =name=, =hair_style=, =hair_length=, =time=
 
 *** Notification
 **** Fetch Notification
-**** Fetch Notification of user
 
 *** Point Recording
 **** Sync Points
