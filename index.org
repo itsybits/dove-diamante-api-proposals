@@ -1,49 +1,52 @@
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil H:3
 
 * Dove Diamante API Proposals
 
-** Account
-*** Login
-*** Password Recovery
-*** Register
+** API
 
-** Photo
-*** Photo Stream
+*** Account
+**** Login
+**** Password Recovery
+**** Register
+
+*** Photo
+**** Photo Stream
 # **** Request: filter
 # **** Response: photoUrls
-*** Upload Photo
+**** Upload Photo
 # **** Request: photoData, metadata
-*** Get Photo Detail
+**** Get Photo Detail
 # **** Response: metadatA
 
-** Notification
-*** Fetch Notification
+*** Notification
+**** Fetch Notification
 # - Prefer cursor-based pagination API [[https://developers.facebook.com/docs/reference/api/pagination/][Facebook Pagination]]
 # - An alternative is to implement *Push Notification Service*
 
-** Point Recording
-*** Sync Points
+*** Point Recording
+**** Sync Points
 
-** Profile
-*** Update profile
+*** Profile
+**** Update profile
 
-** Inviting
-*** Facebook
+*** Inviting
+**** Facebook
 #+begin_quote
 Invite through Facebook email or by a Facebook App? <br/>
 And there is no API provided to get a friends' email from a Facebook user
 #+end_quote
-*** Contacts
-*** Unlimited Community
+**** Contacts
+**** Unlimited Community
 #+begin_quote
 Is Invite/Find supposed to be for unregistered users?
 If so, how should it possible look for this unlimited community?
 #+end_quote
 
-* PHOTO METADATA
+** PHOTO METADATA
 #+begin_quote
 Should leverage Image metadata format (XMP, ITCP, ...) <br/>
 Or should use plain API instead?
 #+end_quote
-** Category
-** Occasion
+*** Metadata included
+**** Category
+**** Occasion
