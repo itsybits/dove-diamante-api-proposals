@@ -64,6 +64,7 @@ By =email= or =facebook_id=
 ** PHOTO METADATA
 #+begin_quote
 Should leverage image metadata format (XMP, ITCP, ...)
+
 Or just use plain API instead?
 #+end_quote
 *** Metadata included
