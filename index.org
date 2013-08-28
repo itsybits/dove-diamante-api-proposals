@@ -1,0 +1,47 @@
+#+OPTIONS: toc:nil
+
+* ISSUES
+** Leverage Image metadata format (XMP, ITCP, ...)
+Use standard image file metadata format is quite complex. Should use plain API instead?
+** Facebook Invites
+- Facebook normal invitation require a Facebook App
+- There is [[http://stackoverflow.com/questions/3889463/facebook-graph-api-and-friends-email][no way]] to get friends's email by Facebook API
+
+* API
+
+** Account
+*** Login
+*** Password Recovery
+*** Register
+
+** Photo
+*** Photo Stream
+**** Request: filter
+**** Response: photoUrls
+*** Upload Photo
+**** Request: photoData, metadata
+*** Get Photo Detail
+**** Response: metadata
+
+** Notification
+*** Fetch Notification
+- Prefer cursor-based pagination API [[https://developers.facebook.com/docs/reference/api/pagination/][Facebook Pagination]]
+- An alternative is to implement *Push Notification Service*
+
+** Point Recording
+*** Sync Points
+
+** Profile
+*** Update profile
+
+** Inviting
+*** Facebook                                                            :!:
+*** Contacts                                                            :!:
+*** Unlimited Community                                                 :!:
+
+** Calendar
+*** API?
+
+* PHOTO METADATA
+** Category                                                              :?:
+** Occasion                                                              :?:
