@@ -1,13 +1,6 @@
 #+OPTIONS: toc:nil
 
-* ISSUES
-** Leverage Image metadata format (XMP, ITCP, ...)
-Use standard image file metadata format is quite complex. Should use plain API instead?
-** Facebook Invites
-- Facebook normal invitation require a Facebook App
-- There is [[http://stackoverflow.com/questions/3889463/facebook-graph-api-and-friends-email][no way]] to get friends's email by Facebook API
-
-* API
+* Dove Diamante API Proposals
 
 ** Account
 *** Login
@@ -16,17 +9,17 @@ Use standard image file metadata format is quite complex. Should use plain API i
 
 ** Photo
 *** Photo Stream
-**** Request: filter
-**** Response: photoUrls
+# **** Request: filter
+# **** Response: photoUrls
 *** Upload Photo
-**** Request: photoData, metadata
+# **** Request: photoData, metadata
 *** Get Photo Detail
-**** Response: metadata
+# **** Response: metadatA
 
 ** Notification
 *** Fetch Notification
-- Prefer cursor-based pagination API [[https://developers.facebook.com/docs/reference/api/pagination/][Facebook Pagination]]
-- An alternative is to implement *Push Notification Service*
+# - Prefer cursor-based pagination API [[https://developers.facebook.com/docs/reference/api/pagination/][Facebook Pagination]]
+# - An alternative is to implement *Push Notification Service*
 
 ** Point Recording
 *** Sync Points
@@ -35,13 +28,22 @@ Use standard image file metadata format is quite complex. Should use plain API i
 *** Update profile
 
 ** Inviting
-*** Facebook                                                            :!:
-*** Contacts                                                            :!:
-*** Unlimited Community                                                 :!:
-
-** Calendar
-*** API?
+*** Facebook
+#+begin_quote
+Invite through Facebook email or by a Facebook App? <br/>
+And there is no API provided to get a friends' email from a Facebook user
+#+end_quote
+*** Contacts
+*** Unlimited Community
+#+begin_quote
+Is Invite/Find supposed to be for unregistered users?
+If so, how should it possible look for this unlimited community?
+#+end_quote
 
 * PHOTO METADATA
-** Category                                                              :?:
-** Occasion                                                              :?:
+#+begin_quote
+Should leverage Image metadata format (XMP, ITCP, ...) <br/>
+Or should use plain API instead?
+#+end_quote
+** Category
+** Occasion
