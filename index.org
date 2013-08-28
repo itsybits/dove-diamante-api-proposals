@@ -67,9 +67,8 @@ Should leverage image metadata format (XMP, ITCP, ...) <br/>
 Or just use plain API instead?
 #+end_quote
 *** Metadata included
-**** Category
-**** Occasion
-**** Attached events
-**** Time
-**** Description
-...
+- Category
+- Occasion
+- Attached events
+- Time
+- Description
