@@ -27,7 +27,15 @@
 **** Sync Points
 
 *** Profile
+**** Get Info
+***** Friends
+***** Favorites
+***** Photos
+***** Flowers
+***** Flowing
 **** Update profile
+
+*** Find
 
 *** Inviting
 **** Facebook
@@ -47,10 +55,8 @@ If so, how should it possible look for this unlimited community?
 **** Claim Gift
 
 *** Others
-**** Tips / Product Info
-#+begin_quote
-Is API needed? Is tips' content static?
-#+end_quote
+**** Tips
+**** Product Info
 
 ** PHOTO METADATA
 #+begin_quote
