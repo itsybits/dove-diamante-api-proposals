@@ -126,7 +126,7 @@ FilterFriendlist !!! mistypo
 ----------------
     ?
 
-FollowerUser
+FollowUser
 -------------
 Request:
     
