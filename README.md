@@ -1,3 +1,6 @@
+Implemented API
+===============
+
 Login
 -----
 Request:
@@ -50,7 +53,7 @@ Response:
 
     {
         "id": <int>,
-        "username": <string>
+        "username": <string>,
         "facebookId": <int?>,
         "address": <string?>,
         "district": <string?>,
@@ -58,13 +61,13 @@ Response:
         "location": <string>,
         "email": <string>,
         "hairLength": <string?>,
-        "password": <string?> !!!
+        "password": <string?>, !!!
         "phone": <string?>,
         "totalPoint": <int>,
         "isActived": <boolean>,
         "isDeleted": <boolean>,
         "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-        "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+        "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
     }
 
 EditProfile
@@ -102,7 +105,7 @@ Response:
     [
         {
             "id": <int>,
-            "username": <string>
+            "username": <string>,
             "facebookId": <int?>,
             "address": <string?>,
             "district": <string?>,
@@ -110,21 +113,20 @@ Response:
             "location": <string>,
             "email": <string>,
             "hairLength": <string?>,
-            "password": <string?> !!!
+            "password": <string?>, !!!
             "phone": <string?>,
             "totalPoint": <int>,
             "isActived": <boolean>,
             "isDeleted": <boolean>,
             "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
         },
 
         ...
     ]
 
-FilterFriendlist !!! mistypo
+FilterFriendlist
 ----------------
-    ?
 
 FollowUser
 -------------
@@ -148,7 +150,7 @@ Response:
     [
         {
             "id": <int>,
-            "username": <string>
+            "username": <string>,
             "facebookId": <int?>,
             "address": <string?>,
             "district": <string?>,
@@ -156,13 +158,13 @@ Response:
             "location": <string>,
             "email": <string>,
             "hairLength": <string?>,
-            "password": <string?> !!!
+            "password": <string?>, !!!
             "phone": <string?>,
             "totalPoint": <int>,
             "isActived": <boolean>,
             "isDeleted": <boolean>,
             "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
         },
 
         ...
@@ -202,4 +204,32 @@ Response:
             "title": <string>,
             "createdDate": <"dd/mm/yy hh:mm:ss"> !!! mismatch date string format
         }
+    ]
+
+> TODO: Add more implemented API
+
+Unimplemented API
+=================
+
+Connections
+-----------
+
+**Obsolete these API**: `GetGlobalUsers`, `FilterFriendlist`, `GetFollowingUsers`
+
+Request:
+    
+    UserName
+    Scope = "global" | "followers" | "following" | "facebook_friends"
+
+Response:
+
+    [
+        {
+            "id": <int>,
+            "username": <string>,
+            "followed": <boolean>,     // Am I followed this user?
+            "follower": <boolean>,    // Is this user following me?
+        },
+
+        ...
     ]
