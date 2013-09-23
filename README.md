@@ -226,8 +226,8 @@ Response:
         {
             "id": <int>,
             "username": <string>,
-            "followed": <boolean>,     // Am I followed this user?
-            "follower": <boolean>,    // Is this user following me?
+            "following": <boolean>,     // Am I following this user?
+            "follower": <boolean>,      // Is this user one of my followers?
         },
 
         ...
