@@ -26,7 +26,7 @@ Response:
         "result": true | <error_msg>
     }
 
-Password Recovery
+PasswordRecovery
 -----------------
 
 Request:
@@ -39,7 +39,7 @@ Reponse:
         "result": true | <error_msg>
     }
 
-Get User Detail
+GetUserDetail
 ---------------
 
 Request:
@@ -67,7 +67,7 @@ Response:
         "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
     }
 
-Edit Profile
+EditProfile
 ------------
 Request:
 
@@ -87,7 +87,15 @@ Response:
         result: true | <error_msg?>
     }
 
-Get Global User List
+UpdateFacebookID
+----------------
+Request:
+
+    UserName
+    FacebookID
+# TODO
+
+GetGlobalUsers
 --------------------
 Response:
 
@@ -114,10 +122,11 @@ Response:
         ...
     ]
 
-Get filter Facebook friends of User ???
------------------------------------
+FilterFriendlist !!! mistypo
+----------------
+    ?
 
-Follower User
+FollowerUser
 -------------
 Request:
     
