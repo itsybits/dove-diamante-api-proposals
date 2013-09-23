@@ -96,7 +96,6 @@ Request:
 
     UserName
     FacebookID
-# TODO
 
 GetGlobalUsers
 --------------------
