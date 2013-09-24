@@ -11,8 +11,10 @@ Request:
 Response:
 
     {
-        "result": true | <error_msg>
+        "result": true
     }
+
+> Error message?
 
 Register
 --------
@@ -26,8 +28,10 @@ Request:
 Response:
     
     {
-        "result": true | <error_msg>
+        "result": true
     }
+
+> Error messages?
 
 PasswordRecovery
 -----------------
@@ -39,7 +43,7 @@ Request:
 Reponse:
 
     {
-        "result": true | <error_msg>
+        "result": true
     }
 
 GetUserDetail
