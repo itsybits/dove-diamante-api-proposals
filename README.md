@@ -28,10 +28,8 @@ Request:
 Response:
     
     {
-        "result": true
+        "result": true | <error_message>
     }
-
-> Error messages?
 
 PasswordRecovery
 -----------------
