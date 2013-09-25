@@ -252,13 +252,12 @@ Unimplemented API
 Connections
 -----------
 
-**Obsolete these API**: `GetGlobalUsers`, `FilterFriendlist`, `GetFollowingUsers`
-
+**Obsolete these API:** `GetGlobalUsers`, `GetFollowingUsers`
 Request:
     
 ```
 UserName
-Scope = "global" | "followers" | "following" | "facebook_friends"
+Scope = "global" | "followers" | "following"
 ```
 
 Response:
@@ -266,12 +265,35 @@ Response:
 ```json
 [
     {
-        "id"                 : <int>,
         "username"           : <string>,
         "isFollowing"        : <boolean>,     // Am I following this user?
         "isFollower"         : <boolean>,     // Is this user one of my followers?
-        "isDoveDiamanteUser" : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
     },
     ...
+]
+```
+
+GetFacebookFriends
+------------------
+
+**Obsolete:** `FilterFriendlist`
+
+Request:
+
+```
+    UserName
+```
+
+Response:
+
+```json
+[
+    {
+        "facebook_name"      : <string>
+        "isDoveDiamanteUser" : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
+        [ "username"           : <boolean> ]  // optional
+        [ "isFollowing"        : <boolean> ]  // optional
+        [ "isFollower"         : <boolean> ]  // optional
+    }
 ]
 ```
