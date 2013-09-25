@@ -289,8 +289,8 @@ Response:
 ```json
 [
     {
-        "facebook_name"      : <string>
-        "isDoveDiamanteUser" : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
+        "facebook_name"        : <string>
+        "isDoveDiamanteUser"   : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
         [ "username"           : <boolean> ]  // optional
         [ "isFollowing"        : <boolean> ]  // optional
         [ "isFollower"         : <boolean> ]  // optional
