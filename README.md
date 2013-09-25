@@ -165,9 +165,7 @@ Response:
     
 ```json
 {
-    "result": <boolean>
-  | 
-    "Errors": <error_msg> ???
+    "result": <boolean> | "Errors": <error_msg> ???
 }
 ```
 
@@ -271,8 +269,8 @@ Response:
         "id"                 : <int>,
         "username"           : <string>,
         "isFollowing"        : <boolean>,     // Am I following this user?
-        "isFollower"         : <boolean>,      // Is this user one of my followers?
-        "isDoveDiamanteUser" : <boolean>       // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
+        "isFollower"         : <boolean>,     // Is this user one of my followers?
+        "isDoveDiamanteUser" : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
     },
     ...
 ]
