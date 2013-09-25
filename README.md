@@ -5,14 +5,18 @@ Login
 -----
 Request:
 
-    Account
-    Password
+```
+Account
+Password
+```
 
 Response:
 
-    {
-        "result": true
-    }
+```json
+{
+    "result": true
+}
+```
 
 > Error message?
 
@@ -21,38 +25,108 @@ Register
 
 Request:
 
-    UserName
-    Email
-    Password
+```
+UserName
+Email
+Password
+```
 
 Response:
-    
-    {
-        "result": true | <error_message>
-    }
+
+```json
+{
+    "result": true | <error_message>
+}
+```
 
 PasswordRecovery
 -----------------
 
 Request:
 
-    Account
+```
+Account
+```
 
 Reponse:
 
-    {
-        "result": true
-    }
+```json
+{
+    "result": true
+}
+```
 
 GetUserDetail
 ---------------
 
 Request:
     
-    UserName
+```
+UserName
+```
 
 Response:
 
+```json
+{
+    "id": <int>,
+    "username": <string>,
+    "facebookId": <int?>,
+    "address": <string?>,
+    "district": <string?>,
+    "province": <string?>,
+    "location": <string>,
+    "email": <string>,
+    "hairLength": <string?>,
+    "password": <string?>, !!!
+    "phone": <string?>,
+    "totalPoint": <int>,
+    "isActived": <boolean>,
+    "isDeleted": <boolean>,
+    "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+    "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
+}
+```
+
+EditProfile
+------------
+Request:
+
+```
+UserName
+Password
+ConfirmPassword ???
+Email
+Phone
+Address
+DistrictID ???
+ProvinceID ???
+HairLength
+```
+
+Response:
+
+```json
+{
+    result: true | <error_msg?>
+}
+```
+
+UpdateFacebookID
+----------------
+Request:
+
+```
+UserName
+FacebookID
+```
+
+~~GetGlobalUsers~~
+--------------------
+Response:
+
+```json
+[
     {
         "id": <int>,
         "username": <string>,
@@ -70,142 +144,107 @@ Response:
         "isDeleted": <boolean>,
         "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
         "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
-    }
+    },
+    ...
+]
+```
 
-EditProfile
-------------
-Request:
-
-    UserName
-    Password
-    ConfirmPassword ???
-    Email
-    Phone
-    Address
-    DistrictID ???
-    ProvinceID ???
-    HairLength
-
-Response:
-
-    {
-        result: true | <error_msg?>
-    }
-
-UpdateFacebookID
-----------------
-Request:
-
-    UserName
-    FacebookID
-
-GetGlobalUsers
+~~FilterFriendlist~~
 --------------------
-Response:
-
-    [
-        {
-            "id": <int>,
-            "username": <string>,
-            "facebookId": <int?>,
-            "address": <string?>,
-            "district": <string?>,
-            "province": <string?>,
-            "location": <string>,
-            "email": <string>,
-            "hairLength": <string?>,
-            "password": <string?>, !!!
-            "phone": <string?>,
-            "totalPoint": <int>,
-            "isActived": <boolean>,
-            "isDeleted": <boolean>,
-            "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
-        },
-
-        ...
-    ]
-
-FilterFriendlist
-----------------
 
 FollowUser
 -------------
 Request:
     
-    UserName
-    UserNameFollowed
+```
+UserName
+UserNameFollowed
+```
 
 Response:
     
-    {
-        "result": <boolean>
-      | 
-        "Errors": <error_msg> ???
-    }
+```json
+{
+    "result": <boolean>
+  | 
+    "Errors": <error_msg> ???
+}
+```
 
-GetFollowingUsers
+~~GetFollowingUsers~~
 -----------------
 Response:
 
-    [
-        {
-            "id": <int>,
-            "username": <string>,
-            "facebookId": <int?>,
-            "address": <string?>,
-            "district": <string?>,
-            "province": <string?>,
-            "location": <string>,
-            "email": <string>,
-            "hairLength": <string?>,
-            "password": <string?>, !!!
-            "phone": <string?>,
-            "totalPoint": <int>,
-            "isActived": <boolean>,
-            "isDeleted": <boolean>,
-            "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-            "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
-        },
-
-        ...
-    ]
+```json
+[
+    {
+        "id": <int>,
+        "username": <string>,
+        "facebookId": <int?>,
+        "address": <string?>,
+        "district": <string?>,
+        "province": <string?>,
+        "location": <string>,
+        "email": <string>,
+        "hairLength": <string?>,
+        "password": <string?>, !!!
+        "phone": <string?>,
+        "totalPoint": <int>,
+        "isActived": <boolean>,
+        "isDeleted": <boolean>,
+        "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+        "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
+    },
+    ...
+]
+```
 
 CreateCategory
 --------------
 Request:
     
-    Title
+```
+Title
+```
 
 Response:
 
-    {
-        "result": true ?
-    }
+```json
+{
+    "result": true ?
+}
+```
 
 DeleteCategory
 --------------
 Request:
 
-    CategoryID
+```
+CategoryID
+```
 
 Response:
 
-    {
-        "result": true ?
-    }
+```json
+{
+    "result": true ?
+}
+```
 
 GetListCategory
 ---------------
 Response:
     
-    [
-        {
-            "id": <int>,
-            "title": <string>,
-            "createdDate": <"dd/mm/yy hh:mm:ss"> !!! mismatch date string format
-        }
-    ]
+```json
+[
+    {
+        "id": <int>,
+        "title": <string>,
+        "createdDate": <"dd/mm/yy hh:mm:ss"> !!! mismatch date string format
+    },
+    ...
+]
+```
 
 > TODO: Add more implemented API
 
@@ -219,19 +258,22 @@ Connections
 
 Request:
     
-    UserName
-    Scope = "global" | "followers" | "following" | "facebook_friends"
+```
+UserName
+Scope = "global" | "followers" | "following" | "facebook_friends"
+```
 
 Response:
 
-    [
-        {
-            "id"                 : <int>,
-            "username"           : <string>,
-            "isFollowing"         : <boolean>,     // Am I following this user?
-            "isFollower"         : <boolean>,     // Is this user one of my followers?
-            "isDoveDiamanteUser" : <boolean>      // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
-        },
-
-        ...
-    ]
+```json
+[
+    {
+        "id"                 : <int>,
+        "username"           : <string>,
+        "isFollowing"         : <boolean>,     // Am I following this user?
+        "isFollower"         : <boolean>,      // Is this user one of my followers?
+        "isDoveDiamanteUser" : <boolean>       // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
+    },
+    ...
+]
+```
