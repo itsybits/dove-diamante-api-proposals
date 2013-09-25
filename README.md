@@ -267,7 +267,7 @@ Response:
     {
         "username"           : <string>,
         "isFollowing"        : <boolean>,     // Am I following this user?
-        "isFollower"         : <boolean>,     // Is this user one of my followers?
+        "isFollower"         : <boolean>     // Is this user one of my followers?
     },
     ...
 ]
@@ -289,11 +289,11 @@ Response:
 ```json
 [
     {
-        "facebook_name"        : <string>
-        "isDoveDiamanteUser"   : <boolean>    // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
-        [ "username"           : <boolean> ]  // optional
-        [ "isFollowing"        : <boolean> ]  // optional
-        [ "isFollower"         : <boolean> ]  // optional
+        "facebook_name"        : <string>,
+        "isDoveDiamanteUser"   : <boolean>,    // Was this user registered Dove Diamante app? (mainly for use with `facebook_friends` scope)
+        < "username"           : <boolean>, >  // optional
+        < "isFollowing"        : <boolean>, >  // optional
+        < "isFollower"         : <boolean>  >  // optional
     }
 ]
 ```
