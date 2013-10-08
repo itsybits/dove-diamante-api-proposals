@@ -299,6 +299,7 @@ Identify Connections
 --------------------
 
 **Obsolete API:** `GetFacebookFriends`
+
 Request:
 
 ```
