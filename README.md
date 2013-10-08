@@ -320,9 +320,9 @@ Response:
 ```json
 [
     {
-        "email" | "facebookId" : <string>       // Corresponded to request
-        "isFollowing"          : <boolean>,     // Am I following this user?
-        "isFollower"           : <boolean>      // Is this user one of my followers?
+        "email" | "facebookId" : <string>,       // Corresponded to request
+        "isFollowing"          : <boolean>,      // Am I following this user?
+        "isFollower"           : <boolean>,      // Is this user one of my followers?
         "isDoveDiamanteUser"   : <boolean>
     },
     ...
