@@ -60,7 +60,7 @@ GetUserDetail
 ---------------
 
 Request:
-    
+
 ```
 UserName
 ```
@@ -155,14 +155,14 @@ Response:
 FollowUser
 -------------
 Request:
-    
+
 ```
 UserName
 UserNameFollowed
 ```
 
 Response:
-    
+
 ```json
 {
     "result": <boolean> | "Errors": <error_msg> ???
@@ -200,7 +200,7 @@ Response:
 CreateCategory
 --------------
 Request:
-    
+
 ```
 Title
 ```
@@ -232,7 +232,7 @@ Response:
 GetListCategory
 ---------------
 Response:
-    
+
 ```json
 [
     {
@@ -245,33 +245,6 @@ Response:
 ```
 
 > TODO: Add more implemented API
-
-Unimplemented API
-=================
-
-Connections
------------
-
-**Obsolete these API:** `GetGlobalUsers`, `GetFollowingUsers`
-Request:
-    
-```
-UserName
-Scope = "global" | "followers" | "following"
-```
-
-Response:
-
-```json
-[
-    {
-        "username"           : <string>,
-        "isFollowing"        : <boolean>,     // Am I following this user?
-        "isFollower"         : <boolean>     // Is this user one of my followers?
-    },
-    ...
-]
-```
 
 GetFacebookFriends
 ------------------
@@ -295,5 +268,63 @@ Response:
         < "isFollowing"        : <boolean>, >  // optional
         < "isFollower"         : <boolean>  >  // optional
     }
+]
+```
+
+Connections
+-----------
+
+**Obsolete these API:** `GetGlobalUsers`, `GetFollowingUsers`
+Request:
+
+```
+UserName
+Scope = "global" | "followers" | "following"
+```
+
+Response:
+
+```json
+[
+    {
+        "username"           : <string>,
+        "isFollowing"        : <boolean>,     // Am I following this user?
+        "isFollower"         : <boolean>      // Is this user one of my followers?
+    },
+    ...
+]
+```
+
+Identify Connections
+--------------------
+
+**Obsolete API:** `GetFacebookFriends`
+Request:
+
+```
+Username = <string>
+Type = "facebookId" | "email"
+Connections =
+{
+    "data": [
+        {
+            "email": <string> | "facebookId": <string>
+        },
+        ...
+    ]
+}
+```
+
+Response:
+
+```json
+[
+    {
+        "email" | "facebookId" : <string>       // Corresponded to request
+        "isFollowing"          : <boolean>,     // Am I following this user?
+        "isFollower"           : <boolean>      // Is this user one of my followers?
+        "isDoveDiamanteUser"   : <boolean>
+    },
+    ...
 ]
 ```
