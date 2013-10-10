@@ -78,6 +78,7 @@ Response:
     "email"          : <string>,
     "hairLength"     : <string?>,
     "phone"          : <string?>,
+    "totalPoint"     : <int>,
     "isActived"      : <boolean>,
     "isDeleted"      : <boolean>,
     "createdDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
@@ -88,10 +89,6 @@ Response:
     "followingCount" : <int>
 }
 ```
-
-> Added: `points`, `favouriteCount`, `photoCount`, `followerCount`, `followingCount`
-
-> Removed: `password`
 
 EditProfile
 ------------
