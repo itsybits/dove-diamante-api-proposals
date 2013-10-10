@@ -69,26 +69,26 @@ Response:
 
 ```json
 {
-    "id": <int>,
-    "username": <string>,
-    "facebookId": <int?>,
-    "address": <string?>,
-    "district": <string?>,
-    "province": <string?>,
-    "location": <string>,
-    "email": <string>,
-    "hairLength": <string?>,
-    "phone": <string?>,
-    "totalPoint": <int>,
-    "isActived": <boolean>,
-    "isDeleted": <boolean>,
-    "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-    "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
-    "points"
-    "favouriteCount"
-    "photoCount"
-    "followerCount"
-    "followingCount"
+    "id"             : <int>,
+    "username"       : <string>,
+    "facebookId"     : <int?>,
+    "address"        : <string?>,
+    "district"       : <string?>,
+    "province"       : <string?>,
+    "location"       : <string>,
+    "email"          : <string>,
+    "hairLength"     : <string?>,
+    "phone"          : <string?>,
+    "totalPoint"     : <int>,
+    "isActived"      : <boolean>,
+    "isDeleted"      : <boolean>,
+    "createdDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+    "updatedDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
+    "points"         : <int>
+    "favouriteCount" : <int>
+    "photoCount"     : <int>
+    "followerCount"  : <int>
+    "followingCount" : <int>
 }
 ```
 
