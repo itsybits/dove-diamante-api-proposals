@@ -93,6 +93,7 @@ Response:
 ```
 
 > Added: `points`, `favouriteCount`, `photoCount`, `followerCount`, `followingCount`
+
 > Removed: `password`
 
 EditProfile
