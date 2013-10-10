@@ -75,7 +75,6 @@ Response:
     "address"        : <string?>,
     "district"       : <string?>,
     "province"       : <string?>,
-    "location"       : <string>,
     "email"          : <string>,
     "hairLength"     : <string?>,
     "phone"          : <string?>,
