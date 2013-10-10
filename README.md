@@ -78,15 +78,22 @@ Response:
     "location": <string>,
     "email": <string>,
     "hairLength": <string?>,
-    "password": <string?>, !!!
     "phone": <string?>,
     "totalPoint": <int>,
     "isActived": <boolean>,
     "isDeleted": <boolean>,
     "createdDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
     "updatedDate": <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
+    "points"
+    "favouriteCount"
+    "photoCount"
+    "followerCount"
+    "followingCount"
 }
 ```
+
+> Added: `points`, `favouriteCount`, `photoCount`, `followerCount`, `followingCount`
+> Removed: `password`
 
 EditProfile
 ------------
