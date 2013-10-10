@@ -83,11 +83,11 @@ Response:
     "isActived"      : <boolean>,
     "isDeleted"      : <boolean>,
     "createdDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
-    "updatedDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>
-    "points"         : <int>
-    "favouriteCount" : <int>
-    "photoCount"     : <int>
-    "followerCount"  : <int>
+    "updatedDate"    : <date_string (dd/mm/yyyy hh:mm:ss AM/PM)>,
+    "points"         : <int>,
+    "favouriteCount" : <int>,
+    "photoCount"     : <int>,
+    "followerCount"  : <int>,
     "followingCount" : <int>
 }
 ```
